@@ -1,0 +1,40 @@
+name: unitask
+description: "과제 정리 어플리케이션."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  go_router: ^17.2.0
+  flutter_riverpod: ^3.3.1
+  lucide_icons_flutter: ^3.1.12
+  shared_preferences: ^2.5.5
+  http: 
+# 버전 앞에 ^가 붙는 이유 -> "호환되는 최신 버전까지 허용한다는 뜻. "
+# pubspec.yaml -> 패키지 관리 파일
+# pub get -> 패키지 설치
+# ex) ^1.0.0 -> 1.x.x 버전까지 허용
+# ex) 1.0.0 -> 1.0.0 버전 "만" 허용
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  
+  uses-material-design: true
+
+  
+  

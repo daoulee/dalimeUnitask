@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:unitask/app/router/app_router.dart';
+import 'package:unitask/app/theme/app_theme.dart';
+
+void main() {
+  runApp(const ProviderScope(child: UniTaskApp()));
+}
+
+class UniTaskApp extends StatelessWidget {
+  const UniTaskApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp.router(
+      themeMode: ThemeMode.system,
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+      routerConfig: appRouter,
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
