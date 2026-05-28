@@ -6,9 +6,7 @@ import 'package:flutter/material.dart';
 /// - DARK
 class AppTheme {
   static ThemeData get light => ThemeData.light(useMaterial3: true).copyWith(
-    colorScheme: ColorScheme.fromSeed(
-      seedColor: const Color(0xFF3B82F6),
-    ),
+    colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF3B82F6)),
     brightness: .light,
     visualDensity: .adaptivePlatformDensity,
     scaffoldBackgroundColor: Colors.white,

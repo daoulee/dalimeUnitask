@@ -18,6 +18,7 @@ dependencies:
   flutter_riverpod: ^3.3.1
   lucide_icons_flutter: ^3.1.12
   shared_preferences: ^2.5.5
+  intl:
   http: 
 # 버전 앞에 ^가 붙는 이유 -> "호환되는 최신 버전까지 허용한다는 뜻. "
 # pubspec.yaml -> 패키지 관리 파일
